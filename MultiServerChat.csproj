@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="HttpServer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="TBC.Extensions.Auxiliary" Version="1.0.0" />
+    <PackageReference Include="TShock" Version="5.1.3" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.355802">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HttpServer">
+      <HintPath>J:\GitHub\PacketMaster\PacketMaster\bin\Debug\net6.0\HttpServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
